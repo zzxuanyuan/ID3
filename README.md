@@ -9,3 +9,6 @@ Functions:
 2. NodeEntropy();   -- Zhe Zhang
 3. SplitAttribute();-- Dongqi Lai
 4. SplitEntropy();  -- Dongqi Lai
+
+1. Unspecified Data -- Zhe Zhang
+2. Discretization   -- Dongqi Lai
