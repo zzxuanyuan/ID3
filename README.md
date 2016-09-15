@@ -5,7 +5,7 @@ Reference:
 
 Functions:
 
-1. GenerateTree();
-2. NodeEntropy();
-3. SplitAttribute();
-4. SplitEntropy();
+1. GenerateTree();  -- Zhe Zhang
+2. NodeEntropy();   -- Zhe Zhang
+3. SplitAttribute();-- Dongqi Lai
+4. SplitEntropy();  -- Dongqi Lai
