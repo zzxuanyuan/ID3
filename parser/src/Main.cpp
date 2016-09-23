@@ -59,6 +59,8 @@ int main(int argc, char* argv[]) {
         }
     }
 
+    cout << "data size = " << data.size() << endl;
+    cout << "format size = " << format.size() << endl;
     cout << endl;
     for (int i = 0; i < data.size(); i++) {
         for (int j = 0; j < format.size(); j++) {
@@ -72,6 +74,7 @@ int main(int argc, char* argv[]) {
                     break;
                 case 2:
                 case 4:
+		    cout << "format[j].getValueForIndex(data[i][j].getDomainIndex()) = " << format[j].getValueForIndex(data[i][j].getDomainIndex()) << endl;
                     cout << format[j].getValueForIndex(data[i][j].getDomainIndex()) << " ";
                     break;
                 default:
