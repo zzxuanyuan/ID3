@@ -1,3 +1,7 @@
+#ifndef INSTANCE_H
+#define INSTANCE_H
+
+#include <unordered_map>
 #include <vector>
 #include "Item.h"
 
@@ -8,9 +12,10 @@ private:
 	vector<Item> m_item_vec;
 	int m_item_num;
 	int m_id;
-	unordered_map<int, string> m_id_map = 0;
+	unordered_map<int, string> m_id_map;
 	int m_label;
 public:
+/*
 	Instance(int item_num, int item_val) {
 		m_item_num = item_num;
 		m_item_vec = vector<Item>(item_num, Item(0));
@@ -30,8 +35,8 @@ public:
 		m_item_num = item_num;
 		m_item_vec = vector<Item>(item_num, Item(0.0));
 	}
-
-	Instance(vector<item> &item_vec) {
+*/
+	Instance(vector<Item> &item_vec) {
 		m_item_num = item_vec.size();
 		m_item_vec = item_vec;
 	}
@@ -46,4 +51,6 @@ public:
 	void setIdString(int id, string id_string) { m_id_map[id] = id_string; }
 	int getLabel() { return m_label; }
 	void setLabel(int label) { m_label = label; }
-}
+};
+
+#endif // INSTANCE_H
